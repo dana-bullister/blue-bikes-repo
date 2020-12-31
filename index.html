@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta property="og:image" content="website_thumbnail.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:site_name" content="A City In Motion" />
+  <meta property="og:title" content="Do More, Better" />
+  <meta property="og:description" content="Boston's Bluebike system supports more than 12,000 rides per day throughout Boston, Cambridge, Brookline, and Somerville." />
+  <meta property="og:url" content="https://dana-bullister.github.io/blue-bikes/">
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style/styles.css">
+  <title>Blue Bikes</title>
+  <script src="https://d3js.org/d3.v6.js"></script>
+</head>
+
+<body>
+
+  <!-- div that will contain visualization -->
+  <div id="panel1" class="flex-container">
+    <div id="mainText">
+      <h1>A City In Motion</h1>
+      <p id="mainSubtitle">Boston's Bluebike system supports more than 12,000 rides per day throughout Boston, Cambridge, Brookline, and Somerville. </p>
+    </div>
+
+    <div id="main_chart_area_cont">
+      <div id="main_chart_area"></div>
+    </div>
+  </div>
+
+  <div id="small_mult_chart_area">
+    <h2 id="small_mult_chart_title" class="smallMultChartDescr">Blue Bike Duration by Time of Day Each Month</h2>
+    <p class="smallMultChartDescr" id="small_mult_chart_title2">The below charts show Blue Bike trip duration (in minutes) for all rides in Greater Boston during an average day in each month of 2019. Each point represents a separate Blue Bike ride.
+      The horizontal line indicates mean trip duration. Outliers of duration greater than 10 hours or under 1 minute have been excluded. </p>
+
+    <div id="small_mult_table_cont">
+
+      <div id="small_mult_table">
+        <div class="row">
+          <div class="item" id="item1"></div>
+          <div class="item" id="item2"></div>
+          <div class="item" id="item3"></div>
+          <div class="item" id="item4"></div>
+          <div class="item" id="item5"></div>
+          <div class="item" id="item6"></div>
+        </div>
+
+        <div class="row">
+          <div class="item" id="item7"></div>
+          <div class="item" id="item8"></div>
+          <div class="item" id="item9"></div>
+          <div class="item" id="item10"></div>
+          <div class="item" id="item11"></div>
+          <div class="item" id="item12"></div>
+        </div>
+
+        <div id="sm_mult_x_axis_label">Start Time</div>
+
+      </div>
+
+    </div>
+
+    <div>
+      <p class="smallMultChartDescr" id="small_mult_chart_descript2">The data points included are a representative subset of all rides taken during that month such that the total number of points corresponds to the average rides taken per day in that
+        month. The charts focus in on just those rides under 30 minutes in duration, which comprise the vast majority.
+      </p>
+    </div>
+    <div id="bottom_descript_cont">
+      <h2 class="smallMultChartDescr"><b>Key Observations</b></h2>
+      <p class="smallMultChartDescr" id="bottom_descript1">From this small multiples chart we see that density of rides is greatest during summer and fall months, as expected, and dwindles in the winter. We also see that the average duration of rides
+        is also highest in these warmer months and lowest in November through February. Consistent across months, however, is a noticeable density of rides at around 9am and 5pm - morning and evening rush hour - as well as a smaller, less substantial
+        density around noontime. Almost all rides occur between 7am and 10pm.
+      </p>
+      <h2 class="smallMultChartDescr"><b>In Closing</b></h2>
+      <p class="smallMultChartDescr">
+        Regardless of month, there are always a substantial number of Blue Bike riders, many of whom use the system for daily work commutes. Used by tens of thousands, the Greater Boston shared bike program provides a sustainable, equitable, healthy,
+        and impactful contributor to the rich ecosystem of urban transportation.
+        <a href="https://www.bluebikes.com/about/">Learn more
+        </a>
+      </p>
+      <p class="sourceNote">
+        Source:
+        <a href="https://s3.amazonaws.com/hubway-data/index.html">Bluebikes Public Data Repository
+        </a>
+      </p>
+
+    </div>
+    <script src="generateScatters.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* style sheet */
+
+body {
+  background-color: rgb(164,198,253);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2.5em;
+}
+
+#panel1 {
+    margin-bottom: 3em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#mainText {
+  padding: 1em;
+}
+
+h1 {
+  font-size: 6em;
+  margin: 0;
+}
+
+p {
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+
+#main_chart_area_cont {
+  text-align: center;
+  margin: 1em;
+}
+
+#main_chart_area {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#small_mult_chart_title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.smallMultChartDescr {
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.sourceNote {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+#small_mult_table_cont {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.item {
+  display: inline-block;
+  margin: .2em;
+}
+
+.row {
+  display: block;
+}
+
+#sm_mult_x_axis_label {
+  font-size: 1.5em;
+  margin-top: .3em;
+}
+
+#sm_mult_y_axis_label {
+  margin-right: 25%;
+}
+
+#horizLine {
+  stroke-width: 2;
+  color: grey;
+}
